@@ -1,0 +1,38 @@
+@use "../base/typography";
+
+@mixin btn($color, $backgroundColor, $borderColor) {
+  @include typography.btn;
+
+  color: $color;
+  width: fit-content;
+  padding: 12px 14px;
+  background-color: $backgroundColor;
+  border: 2px solid $borderColor;
+  box-shadow: 0px 4px 15px 0px $borderColor;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .line {
+    display: inline-block;
+
+    width: 51px;
+    height: 0px;
+
+    border: 1.5px solid $color;
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.btn__primary {
+  @include btn(#f5be32, transparent, #f5be32);
+}
+
+.btn__secondary {
+  @include btn(#000, #f5be32, #f5be32);
+}

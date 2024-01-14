@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+
+$main-font: Cormorant SC;
+$header-font: Cinzel;
+$subHeader-font: Great Vibes;
+$sectionTitle-font: DM Serif Display;
+$caption-font: DM Sans;
+
+.heroText__main {
+  color: #f3d382;
+  text-align: center;
+  font-family: $header-font;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin: 0;
+}
+
+.heroText__sub {
+  color: #fff;
+  font-family: $subHeader-font;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.5px;
+  text-transform: capitalize;
+
+  margin: 0;
+}
+
+.heroText__caption {
+  text-align: center;
+  margin: 14px;
+}
+
+.section__title {
+  color: #f3d382;
+  text-align: center;
+  font-family: $sectionTitle-font;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  margin: 0;
+}
+
+.section__subTitle {
+  color: #fff;
+  font-family: $subHeader-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: capitalize;
+
+  margin: 0;
+}
+
+.section__caption {
+  text-align: center;
+  margin: 20px;
+}
+
+.card__title {
+  color: #f3d382;
+  font-family: $header-font;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.card__caption {
+  margin: 10px 0;
+}
+
+.footer__title {
+  color: #f3d382;
+  text-align: center;
+  font-family: $header-font;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  margin: 0;
+}
+
+@mixin navigation__text {
+  color: #fff;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@mixin btn {
+  text-align: center;
+  font-family: $main-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}

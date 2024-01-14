@@ -1,0 +1,39 @@
+@use "sass:map";
+@use "sass:list";
+
+$breakpoints: (
+  "sm": (
+    576px,
+    "min-width: 540px",
+  ),
+  "md": (
+    720px,
+    "min-width: 768px",
+  ),
+  "lg": (
+    960px,
+    "min-width: 992px",
+  ),
+  "xl": (
+    1140px,
+    "min-width: 1200px",
+  ),
+);
+
+@mixin md {
+  @media (#{list.nth(map.get($breakpoints, 'md'), 2)}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (#{list.nth(map.get($breakpoints, 'lg'), 2)}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (#{list.nth(map.get($breakpoints, 'xl'), 2)}) {
+    @content;
+  }
+}

@@ -1,0 +1,61 @@
+@use "sass:map";
+@use "sass:list";
+
+// Import Base Styles
+@use "base/breakpoints" as *;
+@use "base/typography" as *;
+
+// Import Component Styles
+@use "components/navigation" as *;
+@use "components/buttons" as *;
+@use "components/heroSection" as *;
+@use "components/specialMenuSection" as *;
+@use "components/footer" as *;
+
+$primary-color: blue;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+
+  color: #d9d9d9;
+  font-family: $caption-font;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  max-width: list.nth(map.get($breakpoints, "sm"), 1);
+  margin: 0 auto;
+
+  @include md {
+    max-width: list.nth(map.get($breakpoints, "md"), 1);
+  }
+
+  @include lg {
+    max-width: list.nth(map.get($breakpoints, "lg"), 1);
+  }
+
+  @include xl {
+    max-width: list.nth(map.get($breakpoints, "xl"), 1);
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}

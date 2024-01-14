@@ -1,0 +1,42 @@
+.navigation {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  color: transparent;
+
+  &__container {
+    height: calc(82 + (10 * 2)) * 1px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 82px;
+      cursor: default;
+    }
+  }
+}
+
+.navigation-onScroll {
+  background-color: rgb(30, 30, 30, 0.8);
+  transition: background-color 200ms linear;
+}
+
+nav {
+  a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px;
+
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid #f3d382;
+    }
+  }
+}
