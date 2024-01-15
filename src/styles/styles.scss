@@ -34,8 +34,8 @@ body {
 }
 
 .container {
-  max-width: list.nth(map.get($breakpoints, "sm"), 1);
   margin: 0 auto;
+  max-width: list.nth(map.get($breakpoints, "sm"), 1);
 
   @include md {
     max-width: list.nth(map.get($breakpoints, "md"), 1);

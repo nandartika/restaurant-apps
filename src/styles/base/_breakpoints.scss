@@ -3,8 +3,8 @@
 
 $breakpoints: (
   "sm": (
-    576px,
-    "min-width: 540px",
+    540px,
+    "min-width: 576px",
   ),
   "md": (
     720px,
@@ -19,6 +19,12 @@ $breakpoints: (
     "min-width: 1200px",
   ),
 );
+
+@mixin sm {
+  @media (#{list.nth(map.get($breakpoints, 'sm'), 2)}) {
+    @content;
+  }
+}
 
 @mixin md {
   @media (#{list.nth(map.get($breakpoints, 'md'), 2)}) {

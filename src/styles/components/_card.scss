@@ -1,6 +1,16 @@
+@use "../base/breakpoints" as *;
+
 .card__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card {
@@ -20,10 +30,11 @@
     padding: 30px;
 
     h3 {
-      padding: 0;
-      white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
     }
 
     ul {
