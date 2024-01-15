@@ -5,7 +5,7 @@ class CardComponent extends HTMLElement {
     this.pictureId = this.getAttribute("pictureId");
     this.city = this.getAttribute("city") || null;
     this.rating = this.getAttribute("rating");
-    this.description = this.innerText;
+    this.description = this.getAttribute("description");
     this.render();
   }
 

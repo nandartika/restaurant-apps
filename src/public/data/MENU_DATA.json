@@ -1,0 +1,25 @@
+{
+  "menus": [
+    {
+      "id": "1",
+      "name": "Tuna Sushi",
+      "pictureId": "./images/special-menu/menu-1.jpg",
+      "rating": 5,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut imperdiet lectus."
+    },
+    {
+      "id": "2",
+      "name": "Salmon Sushi",
+      "pictureId": "./images/special-menu/menu-2.jpg",
+      "rating": 5,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut imperdiet lectus."
+    },
+    {
+      "id": "3",
+      "name": "Just Sushi",
+      "pictureId": "./images/special-menu/menu-3.jpg",
+      "rating": 5,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut imperdiet lectus."
+    }
+  ]
+}
