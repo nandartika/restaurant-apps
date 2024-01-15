@@ -20,7 +20,8 @@ $primary-color: blue;
   box-sizing: border-box;
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   background-color: #1e1e1e;
@@ -62,7 +63,7 @@ ul {
   }
 }
 
-section {
+.section {
   margin: 100px 0;
 
   header {

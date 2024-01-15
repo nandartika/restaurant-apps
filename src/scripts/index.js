@@ -4,23 +4,38 @@ import "./card-component";
 import { restaurants } from "../public/data/DATA.json";
 import { menus } from "../public/data/MENU_DATA.json";
 
-window.addEventListener("DOMContentLoaded", () => {
-  const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector(".navigation");
 
-  window.addEventListener("scroll", () => {
-    if (
-      document.body.scrollTop >= navigation.offsetHeight ||
-      document.documentElement.scrollTop >= navigation.offsetHeight
-    ) {
-      navigation.classList.add("navigation-onScroll");
-    } else {
-      navigation.classList.remove("navigation-onScroll");
-    }
-  });
+window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("scroll", navigationHandler);
+  document
+    .getElementById("menuBtn")
+    .addEventListener("click", menuButtonHandler);
 
   makeRestaurantSection();
   makeMenuSection();
 });
+
+const menuButtonHandler = () => {
+  const mobileNavigation = document.getElementById("navigation__list-mobile");
+
+  if (mobileNavigation.classList.contains("navigation__list-mobile--hide")) {
+    mobileNavigation.classList.remove("navigation__list-mobile--hide");
+  } else {
+    mobileNavigation.classList.add("navigation__list-mobile--hide");
+  }
+};
+
+const navigationHandler = () => {
+  if (
+    document.body.scrollTop >= navigation.offsetHeight ||
+    document.documentElement.scrollTop >= navigation.offsetHeight
+  ) {
+    navigation.classList.add("navigation-onScroll");
+  } else {
+    navigation.classList.remove("navigation-onScroll");
+  }
+};
 
 const makeRestaurantSection = () => {
   const restaurantSection = document.getElementById(

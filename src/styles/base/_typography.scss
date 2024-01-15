@@ -1,3 +1,5 @@
+@use "./breakpoints" as *;
+
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
@@ -14,18 +16,21 @@ $caption-font: DM Sans;
   color: #f3d382;
   text-align: center;
   font-family: $header-font;
-  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 
   margin: 0;
+  font-size: 40px;
+
+  @include sm {
+    font-size: 60px;
+  }
 }
 
 .heroText__sub {
   color: #fff;
   font-family: $subHeader-font;
-  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -33,6 +38,11 @@ $caption-font: DM Sans;
   text-transform: capitalize;
 
   margin: 0;
+  font-size: 16px;
+
+  @include sm {
+    font-size: 25px;
+  }
 }
 
 .heroText__caption {
