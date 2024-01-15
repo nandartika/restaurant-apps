@@ -8,9 +8,11 @@
 // Import Component Styles
 @use "components/navigation" as *;
 @use "components/buttons" as *;
-@use "components/heroSection" as *;
-@use "components/specialMenuSection" as *;
 @use "components/footer" as *;
+@use "components/card" as *;
+
+@use "components/heroSection" as *;
+@use "components/restaurantSection" as *;
 
 $primary-color: blue;
 
@@ -57,5 +59,18 @@ ul {
 
   li {
     list-style: none;
+  }
+}
+
+section {
+  margin: 100px 0;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
   }
 }
