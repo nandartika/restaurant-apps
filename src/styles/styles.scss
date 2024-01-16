@@ -75,3 +75,18 @@ ul {
     margin-bottom: 50px;
   }
 }
+
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  padding: 8px;
+  background-color: #f5be32;
+  color: black;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 10px;
+  left: 10px;
+}

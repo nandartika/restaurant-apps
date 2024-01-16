@@ -27,6 +27,7 @@ footer {
     a {
       @include typography.navigation__text;
       text-decoration: none;
+      padding: 10px;
 
       &:hover {
         border-bottom: 2px solid #f3d382;
